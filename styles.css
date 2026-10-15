@@ -1,0 +1,147 @@
+/* Globals */
+* {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    border-radius: 6px;
+}
+
+
+/* Containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    max-width: 60%;
+    padding: 20px;
+    margin: 20px;
+
+    background-color: rgb(205, 243, 205);
+}
+
+.master-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    container-type: inline-size;
+    flex-direction: column;
+    justify-content: left;
+
+    width: 40%;
+    max-height: 100px;
+    padding: 20px;
+    margin: 20px;
+
+    background-color: rgb(169, 221, 169);
+}
+
+.header :is(h1, h2, h3) {
+    margin: 6px;
+}
+
+.header.left :is(p, h1, h2, h3) {
+    text-align: left;
+}
+
+.header.right :is(p, h1, h2, h3) {
+    text-align: right;
+    font-size: 26px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px;
+
+    background-color: rgb(169, 221, 169);
+}
+
+.content :is(li, p, h1, h2, h3, h4) {
+    text-align: left;
+}
+
+.content :is(h1, h2, h3, h4) {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.content :is(li, p) {
+    margin-bottom: 4px;
+
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+div hr {
+    display: block;
+    width: 96%;
+
+    border-width: 0.125px;
+    border-color: black;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    width: 500px;
+    height: 282px;
+
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.section {
+    margin: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Text */
+p, li {
+    margin: 3.5px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-heading {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+ul {
+    margin-top: 2px;
+}
