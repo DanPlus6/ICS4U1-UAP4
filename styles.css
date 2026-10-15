@@ -14,6 +14,7 @@ div {
     border-radius: 6px;
 }
 
+
 /* Containers */
 .container {
     display: flex;
@@ -48,15 +49,15 @@ div {
     background-color: rgb(169, 221, 169);
 }
 
-.header :is(h1,h2,h3) {
+.header :is(h1, h2, h3) {
     margin: 6px;
 }
 
-.header.left :is(p,h1,h2,h3) {
+.header.left :is(p, h1, h2, h3) {
     text-align: left;
 }
 
-.header.right :is(p,h1,h2,h3) {
+.header.right :is(p, h1, h2, h3) {
     text-align: right;
     font-size: 26px;
 }
@@ -74,26 +75,43 @@ div {
     background-color: rgb(169, 221, 169);
 }
 
-.content :is(li,p,h1,h2,h3,h4) {
+.content :is(li, p, h1, h2, h3, h4) {
     text-align: left;
 }
 
-.content p {
+.content :is(h1, h2, h3, h4) {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.content :is(li, p) {
     margin-bottom: 4px;
-    line-height: 21px;
+
+    font-size: 1.25rem;
+    line-height: 2.5rem;
 }
 
 div hr {
     display: block;
     width: 96%;
+
+    border-width: 0.125px;
+    border-color: black;
 }
 
 .video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
     width: 500px;
     height: 282px;
 
     margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .video-container iframe {
@@ -103,7 +121,7 @@ div hr {
 }
 
 .section {
-    margin: 32px;
+    margin: 48px;
 
     display: flex;
     flex-direction: column;
@@ -113,20 +131,15 @@ div hr {
 
 
 /* Text */
-h2 {
-    margin-top: 18px;
-    margin-bottom: 8px;
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
+p, li {
     margin: 3.5px;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .list-heading {
     margin-top: 10px;
     margin-bottom: 2px;
-    margin-left: 6px;
 }
 
 ul {
