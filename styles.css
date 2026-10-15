@@ -28,21 +28,37 @@ div {
     background-color: rgb(205, 243, 205);
 }
 
+.master-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header {
     display: flex;
+    container-type: inline-size;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
 
-    max-width: 40%;
+    width: 40%;
+    max-height: 100px;
     padding: 20px;
     margin: 20px;
 
     background-color: rgb(169, 221, 169);
 }
 
-.header h1,h2,h3 {
+.header :is(h1,h2,h3) {
     margin: 6px;
+}
+
+.header.left :is(p,h1,h2,h3) {
+    text-align: left;
+}
+
+.header.right :is(p,h1,h2,h3) {
+    text-align: right;
+    font-size: 26px;
 }
 
 .content {
@@ -58,7 +74,7 @@ div {
     background-color: rgb(169, 221, 169);
 }
 
-.content li,p,h1,h2,h3,h4 {
+.content :is(li,p,h1,h2,h3,h4) {
     text-align: left;
 }
 
